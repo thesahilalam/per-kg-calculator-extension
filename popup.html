@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Per KG Calculator</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    input, select {
+      width: calc(100% - 22px);
+      margin-bottom: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    button {
+      width: 100%;
+      padding: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #result {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Per KG Calculator</h3>
+  <input type="number" id="price" placeholder="Enter price">
+  <div style="display: flex; align-items: center;">
+    <input type="number" id="weight" placeholder="Enter weight" style="flex: 1;">
+    <select id="unit" style="flex: 1; margin-left: 5px;">
+      <option value="grams">grams</option>
+      <option value="kg">kg</option>
+    </select>
+  </div>
+  <button id="calculate">Calculate</button>
+  <div id="result"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
